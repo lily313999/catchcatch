@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>接物品遊戲</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <div class="hud">
+      <div id="score">分數：0</div>
+      <div id="timer">時間：60</div>
+    </div>
+    <div class="game-box" id="gameBox">
+      <img id="basket" src="img03.png" class="basket" />
+    </div>
+
+    <button id="restartBtn">重新開始</button>
+  </div>
+
+  <!-- ⬇️ 分數說明移到外層 -->
+  <div class="score-guide">
+    <img src="img01.png" class="icon" /> = +100分　
+    <img src="img02.png" class="icon" /> = +500分　
+    <img src="img04.png" class="icon" /> = -1000分
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

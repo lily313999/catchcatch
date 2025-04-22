@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+.game-container {
+  width: 50%;
+  max-width: 50vh; /* 保持 16:9 比例 */
+  aspect-ratio: 3 / 4;
+  margin: auto;
+  position: relative;
+  background: #ffffff;
+  border: 2px solid #333;
+  overflow: hidden;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #222;
+  color: white;
+  font-size: 18px;
+}
+
+.game-box {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 40px);
+  overflow: hidden;
+}
+
+.basket {
+  position: absolute;
+  bottom: 10px;
+  width: 80px;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.falling {
+  position: absolute;
+  width: 40px;
+  height: auto;
+}
+
+.score-guide {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.score-guide .icon {
+  width: 28px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+
+#restartBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 10;
+}
+
+#restartBtn:hover {
+  background-color: #218838;
+}
+
+
