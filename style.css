@@ -11,9 +11,9 @@ body, html {
 }
 
 .game-container {
-  width: 100%;
-  max-width: 100vh; /* 保持 16:9 比例 */
-  aspect-ratio: 9 / 16;
+  width: 80%;
+  max-width: 80vh; /* 保持 16:9 比例 */
+  aspect-ratio: 3 / 4;
   margin: auto;
   position: relative;
   background: #ffffff;
